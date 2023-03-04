@@ -42,7 +42,7 @@ namespace ReadingJsonFiles
 
             var files = Directory.GetFiles(inputDir) ?? default;
 
-            if (files?.Length < 1 || files is null)
+            if (files is null || files.Length < 1)
             {
                 Console.Error.WriteLine("Could not parse files in search path.");
                 Environment.Exit(-1);
