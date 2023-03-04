@@ -1,4 +1,4 @@
-﻿using ReadingJsonFiles.Models;
+﻿using ReadingJsonFiles.ReportData;
 using System.Text.Json;
 using System.Xml.Serialization;
 
@@ -47,11 +47,11 @@ namespace ReadingJsonFiles
                 Console.Error.WriteLine("Could not parse files in search path.");
                 Environment.Exit(-1);
             }
-            
+
             return files;
         }
 
-        private static void PrintJsonToConsole(WeatherReportData weatherReportData) 
+        private static void PrintJsonToConsole(WeatherReportData weatherReportData)
         {
             foreach (var weatherReport in weatherReportData.WeatherReports)
             {
@@ -76,7 +76,7 @@ namespace ReadingJsonFiles
             foreach (var weatherReport in weatherReports.WeatherReports)
             {
                 var filePath = Path.Combine(outputPath, $"{weatherReport.TimeStamp.ToShortDateString()}.xml");
-                
+
                 using (var fileStream = new FileStream(filePath, FileMode.Create))
                 {
                     var serializer = new XmlSerializer(typeof(WeatherReport));

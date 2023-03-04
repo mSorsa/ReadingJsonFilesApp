@@ -1,4 +1,4 @@
-﻿namespace ReadingJsonFiles.Models
+﻿namespace ReadingJsonFiles.ReportData
 {
     public class WeatherReportData
     {
