@@ -6,9 +6,9 @@ namespace ReadingJsonFiles
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            var files = ParseFiles(args);
+            var files = ParseFiles();
 
             foreach (var report in files)
             {
@@ -21,7 +21,6 @@ namespace ReadingJsonFiles
 
                     if (weatherReportData is null)
                         throw new JsonException($"Could not Deserialize {report}");
-
 
                     // Process the weather reports
                     PrintJsonToConsole(weatherReportData);
@@ -36,18 +35,19 @@ namespace ReadingJsonFiles
             }
         }
 
-        private static string[] ParseFiles(string[] args)
+        private static string[] ParseFiles()
         {
             var currentDir = Directory.GetCurrentDirectory();
             var inputDir = string.Concat(currentDir.AsSpan(0, currentDir.IndexOf("bin")), "Data\\", "Reports");
 
             var files = Directory.GetFiles(inputDir) ?? default;
 
-            if (files.Length < 1)
+            if (files?.Length < 1 || files is null)
             {
                 Console.Error.WriteLine("Could not parse files in search path.");
                 Environment.Exit(-1);
             }
+            
             return files;
         }
 
@@ -58,12 +58,12 @@ namespace ReadingJsonFiles
                 Console.WriteLine($"Weather report for {weatherReport.TimeStamp}:");
                 foreach (var city in weatherReport.Cities)
                 {
-                    Console.WriteLine($"  City: {city.Name}");
-                    Console.WriteLine($"  Temperature: {city.Temperature}");
+                    Console.WriteLine($"\tCity: {city.Name}");
+                    Console.WriteLine($"\tTemperature: {city.Temperature}");
 
                     if (city.IsCloudy.HasValue)
                     {
-                        Console.WriteLine($"  Is Cloudy: {city.IsCloudy.Value}");
+                        Console.WriteLine($"\tIs Cloudy: {city.IsCloudy.Value}");
                     }
 
                     Console.WriteLine();
@@ -78,6 +78,7 @@ namespace ReadingJsonFiles
             foreach (var weatherReport in weatherReports.WeatherReports)
             {
                 var filePath = Path.Combine(outputPath, $"{weatherReport.TimeStamp.ToShortDateString()}.xml");
+                
                 using (var fileStream = new FileStream(filePath, FileMode.Create))
                 {
                     var serializer = new XmlSerializer(typeof(WeatherReport));
