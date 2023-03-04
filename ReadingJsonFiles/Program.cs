@@ -60,9 +60,7 @@ namespace ReadingJsonFiles
                 {
                     Console.WriteLine($"\tCity: {city.Name}");
                     Console.WriteLine($"\tTemperature: {city.Temperature}");
-
-                    if (city.IsCloudy)
-                        Console.WriteLine($"\tIs Cloudy: {city.IsCloudy}");
+                    Console.WriteLine($"\tIs Cloudy: {city.IsCloudyToString()}");
 
                     Console.WriteLine();
                 }

@@ -5,5 +5,8 @@
         public string Name { get; set; } = string.Empty;
         public float Temperature { get; set; }
         public bool IsCloudy { get; set; } = true;
+
+        internal string IsCloudyToString() 
+            => IsCloudy ? "Yes" : "No";
     }
 }
