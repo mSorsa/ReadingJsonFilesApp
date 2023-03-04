@@ -1,0 +1,37 @@
+{
+	"WeatherReports": [
+		{
+			"TimeStamp": "2023-01-01T14:01:23Z",
+			"Cities": [
+				{
+					"Name": "City1",
+					"Temperature": 12.3,
+					"IsCloudy": true
+				},
+				{
+					"Name": "City2",
+					"Temperature": 15.6
+				}
+			]
+		},
+		{
+			"TimeStamp": "2023-01-02T13:22:19Z",
+			"Cities": [
+				{
+					"Name": "City1",
+					"Temperature": 8.9,
+					"IsCloudy": false
+				},
+				{
+					"Name": "City2",
+					"Temperature": 10.2,
+					"IsCloudy": true
+				},
+				{
+					"Name": "City3",
+					"Temperature": 7.4
+				}
+			]
+		}
+	]
+}

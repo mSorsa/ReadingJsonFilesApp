@@ -1,0 +1,32 @@
+{
+  "WeatherReports": [
+    {
+      "TimeStamp": "2023-05-01T09:00:00Z",
+      "Cities": [
+        {
+          "Name": "London",
+          "Temperature": 5.1,
+          "IsCloudy": true
+        },
+        {
+          "Name": "Berlin",
+          "Temperature": 8.7
+        }
+      ]
+    },
+    {
+      "TimeStamp": "2023-05-02T09:00:00Z",
+      "Cities": [
+        {
+          "Name": "Tokyo",
+          "Temperature": 14.3,
+          "IsCloudy": true
+        },
+        {
+          "Name": "Sydney",
+          "Temperature": 27.8
+        }
+      ]
+    }
+  ]
+}

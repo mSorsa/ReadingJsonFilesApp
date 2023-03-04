@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WeatherReport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TimeStamp>2023-02-02T06:45:00Z</TimeStamp>
+  <Cities>
+    <City>
+      <Name>Tokyo</Name>
+      <Temperature>5.8</Temperature>
+      <IsCloudy>false</IsCloudy>
+    </City>
+    <City>
+      <Name>Seoul</Name>
+      <Temperature>-2.3</Temperature>
+      <IsCloudy>true</IsCloudy>
+    </City>
+    <City>
+      <Name>Beijing</Name>
+      <Temperature>-0.9</Temperature>
+      <IsCloudy>true</IsCloudy>
+    </City>
+  </Cities>
+</WeatherReport>

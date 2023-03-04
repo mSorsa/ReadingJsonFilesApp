@@ -1,0 +1,37 @@
+{
+  "WeatherReports": [
+    {
+      "TimeStamp": "2023-02-01T08:00:00Z",
+      "Cities": [
+        {
+          "Name": "Sydney",
+          "Temperature": 28.4,
+          "IsCloudy": true
+        },
+        {
+          "Name": "Melbourne",
+          "Temperature": 23.7
+        }
+      ]
+    },
+    {
+      "TimeStamp": "2023-02-02T06:45:00Z",
+      "Cities": [
+        {
+          "Name": "Tokyo",
+          "Temperature": 5.8,
+          "IsCloudy": false
+        },
+        {
+          "Name": "Seoul",
+          "Temperature": -2.3,
+          "IsCloudy": true
+        },
+        {
+          "Name": "Beijing",
+          "Temperature": -0.9
+        }
+      ]
+    }
+  ]
+}

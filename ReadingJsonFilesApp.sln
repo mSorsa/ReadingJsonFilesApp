@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReadingJsonFiles", "ReadingJsonFiles\ReadingJsonFiles.csproj", "{92ED4264-0556-4FE9-A27E-E280A714549D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		ReadingJsonFiles|Any CPU = ReadingJsonFiles|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92ED4264-0556-4FE9-A27E-E280A714549D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92ED4264-0556-4FE9-A27E-E280A714549D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92ED4264-0556-4FE9-A27E-E280A714549D}.ReadingJsonFiles|Any CPU.ActiveCfg = ReadingJsonFiles|Any CPU
+		{92ED4264-0556-4FE9-A27E-E280A714549D}.ReadingJsonFiles|Any CPU.Build.0 = ReadingJsonFiles|Any CPU
+		{92ED4264-0556-4FE9-A27E-E280A714549D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92ED4264-0556-4FE9-A27E-E280A714549D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CFC693B9-1238-4C69-87D1-E088B194B42A}
+	EndGlobalSection
+EndGlobal
